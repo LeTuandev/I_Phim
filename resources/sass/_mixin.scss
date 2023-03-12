@@ -1,0 +1,23 @@
+@mixin max-width-1080 {
+    @media screen and (max-width: $max-width-1080) {
+        @content;
+    }
+}
+
+@mixin min-width-768 {
+    @media screen and (min-width: $min-width-768) {
+        @content;
+    }
+}
+
+@mixin max-width-767 {
+    @media screen and (max-width: $max-width-767) {
+        @content;
+    }
+}
+
+@mixin max-width-875 {
+    @media screen and (max-width: $max-width-875) {
+        @content;
+    }
+}

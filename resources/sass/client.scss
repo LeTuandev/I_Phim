@@ -1,0 +1,125 @@
+@import "bootstrap/scss/bootstrap";
+@import "../sass/common/base/variable";
+@import "../sass/mixin";
+
+body {
+    background-color:$bg-body-06131C;
+}
+.header {
+    height: 150px;
+    width: 100vw;
+    background-color: $bg-header-0C2738;
+    padding: 31px 83px;
+
+    @include max-width-767 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px 15px 40px;
+        height: 60px;
+    }
+
+    &__left {
+        @include  min-width-768 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            @include max-width-767 {
+                display: none;
+            }
+        }
+
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include max-width-767 {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $base-color-white;
+        }
+    }
+
+    .humburger-menu {
+        @include  min-width-768 {
+            display: none;
+        }
+    }
+}
+
+.container-custom {
+    max-width: 1082px;
+    margin: 0 auto;
+    min-height: calc(100vh - 150px - 232px);
+
+    @include max-width-875 {
+        min-height: calc(100vh - 150px - 154px);
+    }
+
+    @include max-width-767 {
+        min-height: calc(100vh - 60px - 154px);
+    }
+}
+
+.scroll-to-top {
+    font-size: 60px;
+    color: $base-color-yellow-green;
+    position: absolute;
+    right: 70px;
+    bottom: 194px;
+
+    @include max-width-875 {
+        display: none;
+    }
+}
+
+.footer {
+    width: 100vw;
+    height: 232px;
+    background-color: $bg-header-0C2738;
+    padding: 60px 454px 41px 88px;
+
+    @include max-width-875 {
+        height: 154px;
+        padding: 30px 22px 38px 22px;
+    }
+
+    &__first,
+    &__second,
+    &__third {
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            color: $base-color-white;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+nav {
+    width: 100%;
+    display: none;
+    background-color: $bg-header-0C2738;
+    padding: 19px 158px 31px calc(57px - 2rem);
+
+    ul {
+        li {
+            list-style-type: none;
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+                color: $base-color-white;
+            }
+        }
+    }
+}
