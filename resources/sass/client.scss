@@ -7,7 +7,6 @@ body {
 }
 .header {
     height: 150px;
-    width: 100vw;
     background-color: $bg-header-0C2738;
     padding: 31px 83px;
 
@@ -75,7 +74,7 @@ body {
     color: $base-color-yellow-green;
     position: absolute;
     right: 70px;
-    bottom: 194px;
+    bottom: -616px;
 
     @include max-width-875 {
         display: none;
@@ -83,7 +82,6 @@ body {
 }
 
 .footer {
-    width: 100vw;
     height: 232px;
     background-color: $bg-header-0C2738;
     padding: 60px 454px 41px 88px;

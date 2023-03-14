@@ -26,7 +26,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     @vite(['resources/sass/client.scss'])
-    @stack('scss')
+    @stack('css')
 </head>
 
 <body>

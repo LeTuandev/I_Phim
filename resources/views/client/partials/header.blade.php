@@ -10,7 +10,7 @@
     </div>
     <div class="header__right">
         <a href="#">Giá vé</a>
-        <a href="#">Phim sắp chiếu</a>
+        <a href="{{ route('comming_soon') }}" class="{{ route('comming_soon') === url()->current() ? 'border-bottom border-warning' : '' }}">Phim sắp chiếu</a>
         <a href="#">Phim đang chiếu</a>
         <a href="#">Phim tháng 5/2023</a>
         <a href="#">Rạp</a>

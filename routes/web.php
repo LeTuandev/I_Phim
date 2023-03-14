@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Client\CommingSoonController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('client.index');
+    return redirect()->route('comming_soon');
 });
+
+Route::get('/comming-soon', [CommingSoonController::class, 'index'])->name('comming_soon');

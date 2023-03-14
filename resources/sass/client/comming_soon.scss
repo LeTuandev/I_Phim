@@ -1,0 +1,14 @@
+@import "../../sass/common/base/variable";
+.list-film {
+    padding-top: 32px;
+    padding-bottom: 30px;
+
+    &__title {
+        span {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 43px;
+            color: $color-yellow-FFB800;
+        }
+    }
+}
